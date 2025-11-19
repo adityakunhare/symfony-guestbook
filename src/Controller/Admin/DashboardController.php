@@ -56,5 +56,5 @@ class DashboardController extends AbstractDashboardController
         yield MenuItem::linkToRoute('Back to the website','fas fa-home','homepage'); 
         yield Menuitem::linkToCrud('Conference','fas fa-map-marker-alt', Conference::class);
         yield Menuitem::linkToCrud('Comments','fas fa-comments', Comment::class);
-    }
+    } 
 }
