@@ -1,0 +1,10 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # ✅ IMPORTANT: serve existing files directly
+    RewriteCond %{REQUEST_FILENAME} -f
+    RewriteRule ^ - [L]
+
+    # fallback to index.php
+    RewriteRule ^ index.php [QSA,L]
+</IfModule>
